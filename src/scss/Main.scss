@@ -2,28 +2,28 @@
 @import "./settings/fonts";
 
 
-body{
+body {
   font-family: $font-base;
 
 
 }
 
 
-.menubox{
+.menubox {
   width: 638px;
   height: 95px;
   display: flex;
   flex-direction: column;
-   gap: 17px;
+  gap: 17px;
 
 
-  a{
+  a {
     text-decoration: none;
 
   }
 
 
-  .up{
+  .up {
     width: 683px;
     height: 36px;
 
@@ -32,8 +32,7 @@ body{
     align-items: center;
 
 
-
-    .upleft{
+    .upleft {
       width: 158px;
       height: 36px;
       display: flex;
@@ -42,9 +41,9 @@ body{
 
     }
 
-    .upbtn{
+    .upbtn {
       width: 71px;
-    padding-left: 5px;
+      padding-left: 5px;
       padding-right: 5px;
       height: 36px;
       display: flex;
@@ -53,20 +52,17 @@ body{
       border: 0.75px solid transparent;
 
 
-      &:hover{
+      &:hover {
         border-color: #FAD648;
 
 
       }
 
-      .btntxt{
+      .btntxt {
 
         font-size: 13px;
         font-family: $font-base;
         color: #737373;
-
-
-
 
 
       }
@@ -74,12 +70,10 @@ body{
     }
 
 
-
   }
 
 
-
-  .down{
+  .down {
     width: 683px;
     height: 42px;
 
@@ -88,24 +82,25 @@ body{
     align-items: center;
 
 
-    .downbtn{
+    .downbtn {
 
       display: flex;
       justify-content: center;
       align-items: center;
       height: 42px;
-     padding-left: 20px;
+      padding-left: 20px;
       padding-right: 20px;
       border: 0.75px solid transparent;
-      &:hover{
-        border-color:  #3C3C3C;
+
+      &:hover {
+        border-color: #3C3C3C;
 
 
       }
     }
 
 
-    .btntxt{
+    .btntxt {
 
       font-size: 18px;
       font-family: $font-base;
@@ -116,11 +111,13 @@ body{
   }
 
 }
-.homebox{
+
+.homebox {
   width: 100vw;
   height: 963px;
   display: flex;
-  .left{
+
+  .left {
     width: 885px;
     height: 963px;
     background-image: url("../assets/Hero Image.png");
@@ -132,50 +129,50 @@ body{
   }
 
 
-
-  .right{
-width: 1015px;
+  .right {
+    width: 1015px;
     height: 963px;
 
     display: flex;
     flex-direction: column;
     align-items: center;
 
-.menu{
-  margin-top: 37px;
-  margin-left: 52px;
+    .menu {
+      margin-top: 37px;
+      margin-left: 52px;
 
-}
+    }
 
 
-    .front{
+    .front {
       width: 674px;
       height: 350px;
 
-      margin-top: 220px ;
+      margin-top: 220px;
       margin-right: 210px;
       display: flex;
       flex-direction: column;
       align-items: center;
 
-   .help{
-     width: 674px;
-     height: 107px;
-     text-align: center;
-     .helptxt{
-     font-family: $font-base;
-       color: #3C3C3C;
-       font-size: 38px;
-       letter-spacing: -0.76px;
-       font-weight: 400;
+      .help {
+        width: 674px;
+        height: 107px;
+        text-align: center;
+
+        .helptxt {
+          font-family: $font-base;
+          color: #3C3C3C;
+          font-size: 38px;
+          letter-spacing: -0.76px;
+          font-weight: 400;
 
 
-     }
+        }
 
 
-   }
+      }
 
-      .jpg{
+      .jpg {
         margin-top: 35px;
         width: 253px;
         height: 33px;
@@ -189,49 +186,171 @@ width: 1015px;
       }
 
 
-     .btns{
-       width: 674px;
-       height: 120px;
-  display: flex;
-       justify-content: space-around;
-       align-items: center;
-       margin-top: 65px;
+      .btns {
+        width: 674px;
+        height: 120px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 65px;
 
-       a{
+        a {
 
-         text-decoration: none;
-
-
-       }
+          text-decoration: none;
 
 
-       .btn{
-         width: 310px;
-         height: 120px;
-         border:0.75px solid #3C3C3C;
-         display: flex;
-         justify-content: center;
-         align-items: center;
+        }
 
 
- .btntxt{
-   text-align: center;
-  font-family: $font-base;
-   color:#3C3C3C ;
-   font-size: 36px;
-   font-weight: 300;
+        .btn {
+          width: 310px;
+          height: 120px;
+          border: 0.75px solid #3C3C3C;
+          display: flex;
+          justify-content: center;
+          align-items: center;
 
 
- }
-       }
+          .btntxt {
+            text-align: center;
+            font-family: $font-base;
+            color: #3C3C3C;
+            font-size: 36px;
+            font-weight: 300;
 
 
-     }
+          }
+        }
+
+
+      }
     }
 
   }
 
 
+}
+
+.registermain{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 100px;
+  .top{
+
+    width: 100%;
+    height: 130px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    margin-right: 400px;
+
+
+  }
+
+.bottom{
+
+  width: 384px;
+  height: 600px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 80px;
+  gap:30px;
+
+
+
+
+  .make{
+
+color: #3C3C3C;
+    font-family: $font-base;
+    font-size: 40px;
+    font-weight: 400;
+
+
+
+  }
+
+
+
+  .jpg{
+
+    
+    width: 253px;
+    height: 33px;
+
+    background-image: url("../assets/Decoration.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+  }
+
+
+
+.form{
+  background-color: #F0F1F1;
+  width: 385px;
+  height: 328px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+  .register-form {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    margin: auto;
+  }
+
+
+  .label-form {
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    color: #3C3C3C;
+  }
+
+
+  input {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #707070;
+    margin-bottom: 20px;
+    outline: none;
+    font-size: 18px;
+  }
+
+
+  .btns{
+    width: 500px ;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+
+
+  }
+
+
+.submit, .login{
+
+  width: 117px;
+  height: 50px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  padding: 10px;
+  outline: none;
+  font-family: $font-base;
+  font-weight: 300;
 
 
 
@@ -239,10 +358,14 @@ width: 1015px;
 
 
 
+}
+
+  .submit:hover, .login:hover {
+    border: 1px solid #3C3C3C;
+  }
 
 
-
-
+}
 }
 
 

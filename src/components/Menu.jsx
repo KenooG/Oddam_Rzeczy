@@ -9,7 +9,7 @@ const Menu = () => {
                     <a href="">
                         <div className="upbtn"><p className="btntxt">Zaloguj</p></div>
                     </a>
-                    <a href="">
+                    <a href="/register">
                         <div className="upbtn"><p className="btntxt">Załóż konto</p></div>
                     </a>
                     </div>
