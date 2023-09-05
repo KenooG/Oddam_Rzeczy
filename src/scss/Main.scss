@@ -150,10 +150,81 @@ width: 1015px;
     .front{
       width: 674px;
       height: 350px;
-      background-color: green;
+
       margin-top: 220px ;
       margin-right: 210px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
 
+   .help{
+     width: 674px;
+     height: 107px;
+     text-align: center;
+     .helptxt{
+     font-family: $font-base;
+       color: #3C3C3C;
+       font-size: 38px;
+       letter-spacing: -0.76px;
+       font-weight: 400;
+
+
+     }
+
+
+   }
+
+      .jpg{
+        margin-top: 35px;
+        width: 253px;
+        height: 33px;
+
+        background-image: url("../assets/Decoration.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+
+      }
+
+
+     .btns{
+       width: 674px;
+       height: 120px;
+  display: flex;
+       justify-content: space-around;
+       align-items: center;
+       margin-top: 65px;
+
+       a{
+
+         text-decoration: none;
+
+
+       }
+
+
+       .btn{
+         width: 310px;
+         height: 120px;
+         border:0.75px solid #3C3C3C;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+
+ .btntxt{
+   text-align: center;
+  font-family: $font-base;
+   color:#3C3C3C ;
+   font-size: 36px;
+   font-weight: 300;
+
+
+ }
+       }
+
+
+     }
     }
 
   }
