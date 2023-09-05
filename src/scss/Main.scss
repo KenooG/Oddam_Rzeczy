@@ -9,17 +9,170 @@ body{
 }
 
 
+.menubox{
+  width: 638px;
+  height: 95px;
+  display: flex;
+  flex-direction: column;
+   gap: 17px;
 
 
-div{
+  a{
+    text-decoration: none;
 
-  width: 200px;
-  height: 200px;
-  background-color: purple;
-  .tekst{
-    font-family: $font-base;
-    margin-top: 0;
+  }
+
+
+  .up{
+    width: 683px;
+    height: 36px;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+
+
+    .upleft{
+      width: 158px;
+      height: 36px;
+      display: flex;
+      margin-right: 15px;
+
+
+    }
+
+    .upbtn{
+
+    padding-left: 10px;
+      padding-right: 10px;
+      height: 36px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 0.75px solid transparent;
+
+
+      &:hover{
+        border-color: #FAD648;
+
+
+      }
+
+      .btntxt{
+
+        font-size: 13px;
+        font-family: $font-base;
+        color: #737373;
+        font-weight: 500;
+
+
+
+      }
+
+    }
+
+
+
+  }
+
+
+
+  .down{
+    width: 683px;
+    height: 42px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+    .downbtn{
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 42px;
+     padding-left: 20px;
+      padding-right: 20px;
+      border: 0.75px solid transparent;
+      &:hover{
+        border-color:  #3C3C3C;
+
+
+      }
+    }
+
+
+    .btntxt{
+
+      font-size: 18px;
+      font-family: $font-base;
+      color: #3C3C3C;
+
+    }
 
   }
 
 }
+.homebox{
+  width: 100vw;
+  height: 963px;
+  display: flex;
+  .left{
+    width: 885px;
+    height: 963px;
+    background-image: url("../assets/Hero Image.png");
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+  }
+
+
+
+  .right{
+width: 1015px;
+    height: 963px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+.menu{
+  margin-top: 37px;
+  margin-left: 52px;
+
+}
+
+
+    .front{
+      width: 674px;
+      height: 350px;
+      background-color: green;
+      margin-top: 220px ;
+      margin-right: 210px;
+
+    }
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
