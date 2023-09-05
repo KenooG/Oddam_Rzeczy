@@ -1,0 +1,25 @@
+@import "./settings/colors";
+@import "./settings/fonts";
+
+
+body{
+  font-family: $font-base;
+
+
+}
+
+
+
+
+div{
+
+  width: 200px;
+  height: 200px;
+  background-color: purple;
+  .tekst{
+    font-family: $font-base;
+    margin-top: 0;
+
+  }
+
+}
