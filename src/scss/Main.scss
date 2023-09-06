@@ -368,7 +368,53 @@ color: #3C3C3C;
 }
 }
 
+.form2{
+
+  background-color: #F0F1F1;
+  width: 385px;
+  height: 328px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
 
+}
+
+.emer{
+  font-family: $font-base;
+
+  position: absolute;
+  transform: translateY(-16px);
+  color: red;
+}
+
+.paser{
+  font-family: $font-base;
+
+  position: absolute;
+  transform: translateY(230px);
+  margin-left: 30px;
+  color: red;
+}
+
+.succesfull{
+position: absolute;
+font-family: $font-base;
+  font-size: 20px;
+  color: #56d46a;
+  font-weight: bold;
+  transform: translateY(-55px);
+  margin-left: 10px;
+
+}
+
+.unsuccesfull{
+  position: absolute;
+  font-family: $font-base;
+
+  color: red;
+font-weight: 500;
+transform: translateY(-16px);
 
 
+}
