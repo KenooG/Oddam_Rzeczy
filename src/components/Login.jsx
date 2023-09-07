@@ -54,7 +54,9 @@ const Login = () => {
                                 name={'password'}
                             />
 
-
+                            <button className={'submit2'} type={'button'} onClick={handleSubmit}>
+                                Zaloguj się
+                            </button>
 
 
 
@@ -68,9 +70,7 @@ const Login = () => {
                             Załóż konto
                         </button></a>
 
-                        <button className={'submit'} type={'button'} onClick={handleSubmit}>
-                            Zaloguj się
-                        </button>
+
 
 
 

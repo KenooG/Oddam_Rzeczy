@@ -15,9 +15,9 @@ const Register = () => {
     const schema = yup.object({
         email: yup.string().email().required(),
         password: yup.string().required(),
-        password2: yup.string().required(),
-        confirm_password: Yup.string().label('confirm password').required().oneOf([Yup.ref('password'), null], 'Passwords must match'),
+        password2: yup.string().label('confirm password').required().oneOf([yup.ref('password'), null], 'Passwords must match'),
     }).required();
+
 
     const { register, handleSubmit, formState:{ errors } } = useForm({
         resolver: yupResolver(schema)
@@ -55,6 +55,14 @@ const onSubmit = ({ email, password }) => registerUser(email, password);
         if (response.status === 201) {
 
             setHasSucces(true)
+            setTimeout(() => {
+
+                navigate("/login");
+            }, 2000);
+
+
+
+
             throw new Error(data.error || 'Zarejestrowano pomyślnie');
 
         }
@@ -119,7 +127,9 @@ const onSubmit = ({ email, password }) => registerUser(email, password);
                                 id="password2"
                                 {...register("password2")}
                             />
-                            {errors.password &&  <p className={"paser"}>{errors.password.message}</p>}
+                            {errors.password && <p className={"paser"}>{errors.password.message}</p>}
+                            {errors.password2 && !errors.password && <p className={"paser"}>{errors.password2.message}</p>}
+
                             <button className={'submit'} type={'submit'}>
                                 Załóż konto
                             </button>
