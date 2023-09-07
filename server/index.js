@@ -51,6 +51,7 @@ app.post('/signup', async (req, res) => {
   }
 });
 
+
 app.post('/login', async (req, res) => {
   const client = new MongoClient(uri);
   const { email, pass } = req.body;
@@ -83,7 +84,6 @@ app.post('/login', async (req, res) => {
     res.status(500).send('internal server error');
   }
 });
-
 
 
 
