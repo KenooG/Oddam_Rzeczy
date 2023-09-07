@@ -1,25 +1,27 @@
 import React, { useState } from 'react';
 import Menu from "./Menu.jsx";
 import { useNavigate } from "react-router-dom";
+import { useForm } from "react-hook-form";
+import { yupResolver } from '@hookform/resolvers/yup';
+import * as yup from "yup";
 
 const Register = () => {
 
-    const [isRegistered, setIsRegistered] = useState(false);
-    const [isTaken, setIsTaken] = useState(false);
+    const schema = yup.object({
+        email: yup.string().email().required(),
+        password: yup.string().required(),
+        password2: yup.string().required(),
+    }).required();
+
+    const { register, handleSubmit, formState:{ errors } } = useForm({
+        resolver: yupResolver(schema)
+    });
+console.log(errors)
     let navigate = useNavigate();
 
-
-    const [formData, setFormData] = useState({
-        email: '',
-        password: '',
-        password2: '',
-    });
-    const [errors, setErrors] = useState({
-        email: null,
-        password: null,
-    });
-
+    const onSubmit = ({ email, password }) => registerUser(email, password);
     const registerUser = async (email, password) => {
+        console.log(email, password)
         const response = await fetch('http://localhost:8000/signup', {
             method: 'POST',
             headers: {
@@ -31,9 +33,6 @@ const Register = () => {
         const data = await response.json();
 
         if (response.status === 409) {
-
-
-            setIsTaken(true);
 
             throw new Error('Email is already taken');
 
@@ -47,60 +46,6 @@ const Register = () => {
         return data;
     };
 
-
-
-
-    const validateEmail = email => /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/.test(email);
-
-    const handleSubmit = async (e) => {
-        e.preventDefault();
-        let validationErrors = {};
-
-        if (!validateEmail(formData.email)) {
-            validationErrors.email = 'Email musi zawierać znak @';
-        }
-        if (formData.password !== formData.password2) {
-            validationErrors.password = 'Hasła nie są identyczne';
-        }
-
-        setErrors(validationErrors);
-
-        if (Object.keys(validationErrors).length === 0) {
-            try {
-                const result = await registerUser(formData.email, formData.password);
-                console.log("User registered", result);
-                setIsRegistered(true);
-                setTimeout(() => {
-
-                    navigate("/login");
-                }, 2000);
-
-            } catch (error) {
-                // Tutaj możesz ustawić stan błędu, aby wyświetlić go w komponencie
-                setErrors({ ...errors, apiError: error.message });
-            }
-        }
-    };
-
-    const handleChange = e => {
-        const {name, value} = e.target;
-        setFormData({
-            ...formData,
-            [name]: value,
-        });
-        if (name === 'email') {
-            setIsTaken(false);
-        }
-        if (value.includes('@')) {
-            setErrors(prevErrors => ({
-                ...prevErrors,
-                email: null
-            }));
-        }
-
-
-    };
-
     return (
         <>
             <div className="registermain">
@@ -112,9 +57,8 @@ const Register = () => {
                     <div className="jpg"></div>
                     <div className="form">
 
-                        <form className={'register-form'} id="myForm">
-                            {isRegistered && <p className={"succesfull"}>Zarejestrowano pomyślnie</p>}
-                            {isTaken&& <p className={"unsuccesfull"}>Email już w użyciu</p>}
+                        <form noValidate className={'register-form'} id="myForm" onSubmit={handleSubmit(onSubmit)}>
+
                             <label className={'label-form'} htmlFor={'email'}>
                                 Email
                             </label>
@@ -122,10 +66,9 @@ const Register = () => {
                                 type="email"
                                 name="email"
                                 id="email"
-                                value={formData.email}
-                                onChange={handleChange}
+                                {...register("email")}
                             />
-                            {errors.email && !isTaken && <p className={"emer"}>{errors.email}</p>}
+                            {errors.email && <p className={"emer"}>{errors.email.message}</p>}
 
                             <label className={'label-form'} htmlFor={'password'}>
                                 Hasło
@@ -134,8 +77,7 @@ const Register = () => {
                                 type="password"
                                 name="password"
                                 id="password"
-                                value={formData.password}
-                                onChange={handleChange}
+                                {...register("password")}
                             />
 
                             <label className={'label-form'} htmlFor={'password2'}>
@@ -145,10 +87,12 @@ const Register = () => {
                                 type="password"
                                 name="password2"
                                 id="password2"
-                                value={formData.password2}
-                                onChange={handleChange}
+                                {...register("password2")}
                             />
-                            {errors.password && <p className={"paser"}>{errors.password}</p>}
+                            {errors.password && <p className={"paser"}>{errors.password.message}</p>}
+                            <button className={'submit'} type={'submit'}>
+                                Załóż konto
+                            </button>
                         </form>
                     </div>
                     <div className="btns">
@@ -157,9 +101,7 @@ const Register = () => {
                                 Zaloguj się
                             </button>
                         </a>
-                        <button className={'submit'} type={'button'} onClick={handleSubmit}>
-                            Załóż konto
-                        </button>
+
                     </div>
                 </div>
             </div>
