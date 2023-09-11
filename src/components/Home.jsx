@@ -1,5 +1,6 @@
 import Menu from "./Menu.jsx";
 import ThreeColumns from "./ThreeColumns.jsx";
+import Simple from "./Simple.jsx";
 
 
 const Home = () =>{
@@ -33,7 +34,7 @@ const Home = () =>{
             </div>
 
       <ThreeColumns/>
-
+  <Simple/>
 
 
 
