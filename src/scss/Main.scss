@@ -466,3 +466,64 @@ font-weight: 500;
 
 
 }
+
+.mainthree{
+
+width: 100vw;
+  height: 384px ;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-image: url("../assets/3 Columns Background.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  .container{
+    margin-right: 150px;
+    margin-left: 150px;
+
+    width: 334px;
+    height: 252px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    .num{
+
+color: #5E5322;
+      font-size: 90px;
+      font-family: 'Open Sans', sans-serif;
+margin: 0;
+
+    }
+
+    .mdes{
+
+      color: #3C3C3C;
+      font-size: 18px;
+      font-family: 'Open Sans', sans-serif;
+      margin: 0;
+      margin-top: 15px;
+
+
+    }
+    .des{
+      font-size: 16px;
+      color: #3C3C3C;
+      font-family: 'Open Sans', sans-serif;
+      margin: 0;
+margin-top: 28px;
+
+    }
+
+
+  }
+
+
+
+
+
+}

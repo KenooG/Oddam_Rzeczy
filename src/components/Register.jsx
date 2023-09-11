@@ -13,7 +13,7 @@ const Register = () => {
 
 
     const schema = yup.object({
-        email: yup.string().email().required(),
+        email: yup.string().email("Nie poprawny format e-mail").required(),
         password: yup.string().required(),
         password2: yup.string().label('confirm password').required().oneOf([yup.ref('password'), null], 'Passwords must match'),
     }).required();
