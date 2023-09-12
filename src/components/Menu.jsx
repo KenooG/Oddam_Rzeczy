@@ -1,3 +1,5 @@
+import {Link} from "react-scroll";
+
 const Menu = () => {
 
 
@@ -6,7 +8,7 @@ const Menu = () => {
             <div className="menubox">
                 <div className="up">
                     <div className="upleft">
-                    <a href="">
+                    <a href="/login">
                         <div className="upbtn"><p className="btntxt">Zaloguj</p></div>
                     </a>
                     <a href="/register">
@@ -21,21 +23,36 @@ const Menu = () => {
                             <p className="btntxt">Start</p>
                         </div>
                     </a>
-                    <a href="">
-                        <div className="downbtn">
-                            <p className="btntxt">O co chodzi?</p>
-                        </div>
-                    </a>
-                    <a href="">
-                        <div className="downbtn">
-                            <p className="btntxt">O nas</p>
-                        </div>
-                    </a>
-                    <a href="">
-                        <div className="downbtn">
-                            <p className="btntxt">Fundacja i organizacje</p>
-                        </div>
-                    </a>
+                    <Link
+                        to="targetElement"
+                        smooth={true}
+                        duration={500}
+                        className="downbtn"
+                        offset={-400}
+                        style={{cursor: 'pointer'}}
+                    >
+                        <p className="btntxt">O co chodzi?</p>
+                    </Link>
+                    <Link
+                        to="targetElement1"
+                        smooth={true}
+                        duration={500}
+                        className="downbtn"
+                        offset={-100}
+                        style={{cursor: 'pointer'}}
+                    >
+                        <p className="btntxt">O nas</p>
+                    </Link>
+                    <Link
+                        to="targetElement2"
+                        smooth={true}
+                        duration={500}
+                        className="downbtn"
+                        offset={-100}
+                        style={{cursor: 'pointer'}}
+                    >
+                        <p className="btntxt">Fundacja i organizacje</p>
+                    </Link>
                     <a href="">
                         <div className="downbtn">
                             <p className="btntxt">Kontakt</p>

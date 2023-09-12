@@ -49,7 +49,7 @@ const Who = () => {
 
     return (
         <>
-            <div className="mainwho">
+            <div id="targetElement2" className="mainwho">
                 <div className="mainboxwho">
                     <p className="title">Komu pomagamy?</p>
                     <div className="dec"></div>

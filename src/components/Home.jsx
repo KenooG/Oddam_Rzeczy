@@ -3,6 +3,8 @@ import ThreeColumns from "./ThreeColumns.jsx";
 import Simple from "./Simple.jsx";
 import About from "./About.jsx";
 import Who from "./Who.jsx";
+import { Link } from 'react-scroll';
+
 
 
 const Home = () =>{

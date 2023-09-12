@@ -6,7 +6,7 @@ const About = () => {
         <>
 
 
-            <div className="mainabout">
+            <div id="targetElement1" className="mainabout">
             <div className="left">
                 <p className="title">O nas</p>
                 <div className="dec"></div>

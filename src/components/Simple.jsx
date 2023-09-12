@@ -2,7 +2,7 @@ const Simple = () => {
 
     return (
         <>
-            <div className="simplebox">
+            <div id="targetElement"  className="simplebox">
                 <div className="up"><p className="title">Wystarczą 4 proste kroki</p>
                     <div className="dec"></div>
                 </div>
