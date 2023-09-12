@@ -26,7 +26,7 @@ const Home = () => {
                             zaufane ręce</p></div>
                         <div className="jpg"></div>
                         <div className="btns">
-                            <a href="">
+                            <a href="/login">
                                 <div className="btn"><p className="btntxt">ODDAJ <br/> RZECZY</p></div>
                             </a><a href="">
                             <div className="btn"><p className="btntxt"> ZORGANIZUJ <br/> ZBIÓRKĘ</p></div>

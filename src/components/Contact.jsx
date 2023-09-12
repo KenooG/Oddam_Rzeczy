@@ -15,7 +15,7 @@ const Contact = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        // Tutaj możesz obsłużyć wysyłanie formularza
+
         console.log("Formularz został wysłany!");
     }
 
