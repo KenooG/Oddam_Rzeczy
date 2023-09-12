@@ -16,7 +16,7 @@ const Menu = () => {
 
                 </div>
                 <div className="down">
-                    <a href="">
+                    <a href="/">
                         <div className="downbtn">
                             <p className="btntxt">Start</p>
                         </div>
