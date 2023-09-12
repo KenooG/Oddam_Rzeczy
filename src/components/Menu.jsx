@@ -53,12 +53,16 @@ const Menu = () => {
                     >
                         <p className="btntxt">Fundacja i organizacje</p>
                     </Link>
-                    <a href="">
-                        <div className="downbtn">
-                            <p className="btntxt">Kontakt</p>
-                        </div>
-                    </a>
-
+                    <Link
+                        to="targetElement3"
+                        smooth={true}
+                        duration={500}
+                        className="downbtn"
+                        offset={-100}
+                        style={{cursor: 'pointer'}}
+                    >
+                        <p className="btntxt">Kontakt</p>
+                    </Link>
                 </div>
             </div>
 
