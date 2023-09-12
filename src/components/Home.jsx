@@ -2,6 +2,7 @@ import Menu from "./Menu.jsx";
 import ThreeColumns from "./ThreeColumns.jsx";
 import Simple from "./Simple.jsx";
 import About from "./About.jsx";
+import Who from "./Who.jsx";
 
 
 const Home = () =>{
@@ -37,7 +38,7 @@ const Home = () =>{
       <ThreeColumns/>
   <Simple/>
 <About/>
-
+<Who/>
 
         </>
 

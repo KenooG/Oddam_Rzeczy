@@ -789,6 +789,200 @@ margin-top: 40px;
 
   }
 
+}
+
+
+.mainwho{
+  width: 100vw;
+  height: 1000px ;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+  .mainboxwho{
+    width: 1350px;
+    height: 1000px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .title{
+
+
+      font-family: 'Open Sans', sans-serif;
+      font-size: 38px;
+      text-align: center;
+      color:#3C3C3C ;
+      margin-bottom: 25px;
+
+    }
+    .dec{
+
+      width: 253px;
+      height: 33px;
+      background-image: url("../assets/Decoration.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+
+    }
+    .btns{
+  margin-top: 50px;
+      width: 750px;
+      height: 80px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+.button{
+  width: 208px;
+  height: 80px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 24px;
+  padding: 10px;
+  outline: none;
+  font-family: $font-base;
+  font-weight: 300;
+  text-align: center;
+
+
+
+  &:hover{
+
+    border: 1px solid #3C3C3C;
+
+
+  }
+
+
+
+}
+
+
+    }
+
+.des{
+margin-top: 70px;
+color: #3C3C3C;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 22px;
+  text-align: center;
+  width: 640px;
+
+
+}
+
+.mainrender{
+
+  width: 1344px;
+  height: 170px;
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  gap:80px;
+
+
+
+  .main{
+width: 1344px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+
+    align-items: flex-start;
+    justify-content: center;
+    gap: 15px;
+
+
+    &::after {
+      content: "";
+      display: block;
+      width: 100%;
+      height: 1px;
+      background-color: #707070;
+      margin-top: 15px;
+    }
+
+
+
+
+  }
+
+
+
+
+  .title{
+color: #3C3C3C;
+    font-family: $font-alt;
+    font-size: 26px;
+margin: 0;
+
+
+
+  }
+
+  .subtitle{
+    color: #3C3C3C;
+    font-family: $font-alt;
+    font-size: 18px;
+    margin: 0;
+
+
+
+  }
+.desc{
+
+  color: #3C3C3C;
+  font-family: $font-alt;
+  font-size: 18px;
+  margin: 0;
+
+
+
+}
+
+
+
+}
+
+
+
+    .nums{
+      width: 160px;
+      height: 50px;
+      display: flex;
+      flex-direction: row;
+      gap: 20px;
+      justify-content: center;
+      transform: translateY(240px);
+
+.square{
+  width:40px ;
+  height: 50px;
+  border: 1px solid transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &:hover{
+
+
+    border: 1px solid black;
+    cursor: pointer;
+
+  }
+
+}
+
+
+
+
+
+    }
+
+  }
 
 
 
