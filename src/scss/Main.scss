@@ -1430,3 +1430,212 @@ width: 700px;
 
 
 }
+
+
+.givemain{
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+.givemainbox{
+width: 100%;
+  height: 860px;
+  display: flex;
+
+
+  .left{
+
+    width: 1015px;
+    height: 100%;
+    background-image: url("../assets/Header-Form-Background.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+  }
+
+  .right{
+    width: 885px;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+    .topright{
+      width: 700px;
+      margin-top: 37px;
+
+
+    }
+
+
+
+    .up2 {
+
+      width: 683px;
+      height: 36px;
+
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+
+
+      .upleft {
+        width: 158px;
+        height: 36px;
+        display: flex;
+        margin-right: 60px;
+
+
+        .upbtn2 {
+
+          width: 100px;
+          padding-left: 5px;
+          padding-right: 5px;
+          height: 36px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border: 0.75px solid transparent;
+          color: #3C3C3C;
+
+
+          &:hover {
+            border-color: #FAD648;
+            color: black;
+
+
+          }
+        }
+      }
+    }
+
+
+  }
+
+  .bottomright{
+width: 650px;
+    height:500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 300px;
+    margin-top: 100px;
+.title{
+  width: 650px;
+font-size: 38px;
+  font-family: "Open Sans", sans-serif;
+  color:#3C3C3C ;
+  text-align: center;
+  letter-spacing: -0.76px;
+  margin-bottom: 25px;
+
+
+}
+
+    .dec{
+
+      width: 253px;
+      height: 33px;
+      background-image: url("../assets/Decoration.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+
+
+    }
+
+    .des{
+      color:#3C3C3C;
+      font-family: 'Open Sans', sans-serif;
+      font-size: 40px;
+      margin-top: 26px;
+
+
+
+    }
+
+
+
+
+.squares{
+
+width: 600px;
+  display: flex;
+  margin-top: 40px;
+  margin-right: 120px;
+
+
+  .square-container {
+    margin-right: 20px; /* Adjust this value as desired */
+  }
+
+
+.square{
+
+border: 1px solid black;
+  width: 150px;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transform: rotate(45deg);
+  position: relative;
+  text-align: center;
+
+
+
+
+  .num, .numdes{
+
+
+    position: absolute;
+
+    transform: translate(-50%, -50%) rotate(-45deg) ;
+    white-space: nowrap;
+    margin: 0;
+
+
+
+  }
+
+  .num{
+    top: 20%;
+    left: 20%;
+    color: #3C3C3C;
+    font-size: 32px;
+
+
+  }
+
+.numdes{
+
+  top: 50%;
+  left: 50%;
+  color: #3C3C3C;
+  font-size: 22px;
+  font-family: 'Open Sans', sans-serif;
+
+}
+
+}
+
+
+}
+
+  }
+
+
+
+
+}
+
+
+
+
+}

@@ -5,7 +5,7 @@ import Login from "./components/Login.jsx";
 import Register from "./components/Register.jsx";
 import HomeLogged from "./components/HomeLogged.jsx";
 
-import Give from "./components/GIve.jsx";
+import Give from "./components/Give.jsx";
 import LoggedOut from "./components/LoggedOut.jsx";
 
 function App() {
