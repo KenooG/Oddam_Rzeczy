@@ -3,7 +3,10 @@ import {BrowserRouter, Route, Router, Routes} from "react-router-dom";
 import Home from "./components/Home.jsx";
 import Login from "./components/Login.jsx";
 import Register from "./components/Register.jsx";
-import Logged from "./components/Logged.jsx";
+import HomeLogged from "./components/HomeLogged.jsx";
+
+import Give from "./components/GIve.jsx";
+import LoggedOut from "./components/LoggedOut.jsx";
 
 function App() {
 
@@ -14,7 +17,9 @@ function App() {
               <Route path="/" element={<Home />} />
               <Route path="/login" element={<Login />} />
               <Route path="/register" element={<Register/>} />
-              <Route path="/logged" element={<Logged/>} />
+              <Route path="/logged" element={<HomeLogged/>} />
+              <Route path="/give" element={<Give/>} />
+              <Route path="/loggedout" element={<LoggedOut/>} />
           </Routes>
       </BrowserRouter>
   )

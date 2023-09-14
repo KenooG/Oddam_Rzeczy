@@ -1303,3 +1303,51 @@ color: #3C3C3C;
 
   }
 }
+.up2 {
+
+  width: 683px;
+  height: 36px;
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+
+  .upleft {
+    width: 158px;
+    height: 36px;
+    display: flex;
+    margin-right: 60px;
+
+
+    .upbtn2 {
+
+      width: 100px;
+      padding-left: 5px;
+      padding-right: 5px;
+      height: 36px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 0.75px solid transparent;
+      color: #3C3C3C;
+
+
+      &:hover {
+        border-color: #FAD648;
+        color: black;
+
+
+      }
+    }
+  }
+}
+
+.Welcome{
+  position: absolute;
+  transform: translateX(1350px);
+  margin-top: 46px;
+
+
+
+}
