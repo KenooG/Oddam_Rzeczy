@@ -1079,7 +1079,7 @@ justify-content: space-between;
     outline: none;
     font-family: 'Open Sans', sans-serif;
     font-size: 18px;
-    font-weight: 300;
+    font-weight: 500;
     resize: none;
     overflow: hidden;
 
@@ -1218,7 +1218,21 @@ width: 240px;
 
 
 
+.error-message{
+  color: red;
+  font-family: 'Open Sans', sans-serif;
 
+
+
+}
+    .error-message1{
+      color: red;
+      font-family: 'Open Sans', sans-serif;
+      margin-top: 0;
+
+
+
+    }
   }
 
 }
