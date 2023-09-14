@@ -5,12 +5,12 @@ import Contact from "./Contact.jsx";
 
 const Give = () => {
 
-    const User = localStorage.getItem('email');
+
     return(
         <>
             <div className="givemain">
                 <div className="givemainbox">
-                    <p className="Welcome">Cześć {User}!</p>
+
                     <div className="left"></div>
                     <div className="right">
                         <div className="topright">

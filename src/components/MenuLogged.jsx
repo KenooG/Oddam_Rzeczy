@@ -2,11 +2,12 @@ import {Link} from "react-scroll";
 
 const MenuLogged = () => {
 
-
+    const User = localStorage.getItem('email');
     return (
         <>
             <div className="menubox">
                 <div className="up2">
+                    <p className="Welcome">Cześć {User}!</p>
                     <div className="upleft">
                         <a href="/give">
                             <div className="upbtn2"><p className="btntxt">Oddaj rzeczy</p></div>

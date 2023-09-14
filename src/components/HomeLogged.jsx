@@ -15,7 +15,7 @@ const HomeLogged = () => {
         <>
             <div className="homebox">
 
-                    <p className="Welcome">Cześć {User}!</p>
+
 
                 <div className="left"></div>
 
