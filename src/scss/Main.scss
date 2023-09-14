@@ -1351,3 +1351,82 @@ color: #3C3C3C;
 
 
 }
+
+
+.loggedoutmain{
+  width: 100vw;
+  height: 650px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+.upmain{
+width: 700px;
+  height: 200px;
+  margin-top: 40px;
+  margin-right: 150px;
+  align-self: flex-end;
+
+
+
+
+
+}
+
+  .downmain{
+ height: 300px;
+    width:440px ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .title{
+      width: 440px;
+      font-size: 40px;
+      font-family: 'Open Sans', sans-serif;
+      color: #3C3C3C;
+      text-align: center;
+      margin-bottom: 25px;
+
+
+
+
+    }
+    .dec{
+
+
+      width: 253px;
+      height: 33px;
+      background-image: url("../assets/Decoration.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+
+
+    }
+
+    a{
+      text-decoration: none;
+
+    }
+
+    .btn{
+      margin-top: 40px;
+      width: 150px;
+      height: 50px;
+      border: 1px solid black;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      color: #3C3C3C;
+
+    }
+
+
+
+  }
+
+
+}
