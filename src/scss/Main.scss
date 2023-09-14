@@ -1635,7 +1635,34 @@ border: 1px solid black;
 
 }
 
+}
+.giveformmain{
+  width: 100vw;
+  height: 1070px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
+  .topgive{
+    width: 100%;
+    height: 180px;
+    background-color: #FAD648;
+    
+    
+  }
+
+  .bottomgive{
+
+width: 100%;
+    height: 890px;
+    background-image: url("../assets/Background-Form.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+  }
 
 
 }
+

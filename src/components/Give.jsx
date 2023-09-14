@@ -1,4 +1,6 @@
 import MenuLoggedGive from "./MenuLoggedGive.jsx";
+import Giveform from "./Giveform.jsx";
+import Contact from "./Contact.jsx";
 
 
 const Give = () => {
@@ -50,8 +52,14 @@ const Give = () => {
                         </div>
 
 
+
+
+
+
                     </div>
                 </div>
+                <Giveform/>
+                <Contact/>
             </div>
 
 
